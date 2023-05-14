@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body onload="myFunction()">
+    <header>
+        <table id="mytable">
+            <tr>
+                <th>STT</th>
+                <th>Tên VXL</th>
+                <th>Hãng sx</th>
+                <th>Ngày ra mắt</th>
+                <th>Giá (vnđ)</th>
+            </tr>
+        </table>
+        <br>
+    </header>
+    <section>
+        <span>Tên VXL</span>
+        <input type="text" id="Ten">
+        <span>Hãng</span>
+        <input type="text" id="Hang">
+        <span>Ngày ra mắt</span>
+        <input type="date" id="NgaySX">
+        <span>Giá</span>
+        <input type="text" id="Gia">
+        <button id="btnHuy" onclick="huy()">Huỷ</button>
+        <button id="btnThem" onclick="them()">Thêm</button>
+    </section>
+    <script src="main.js"></script>
+</body>
+</html>

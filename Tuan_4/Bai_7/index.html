@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;     
+        }
+        .bo{
+            border: 1px solid #333;
+            padding: 20px; 
+            width: 30%;
+            height: 150px;
+            margin: 50px auto; 
+        }
+        #hangthem{
+             display: none; 
+        }
+        #btlLuu{
+            display: none;
+        }
+        #btlHuy_2{
+            display: none;
+        }
+        .btn{
+            margin-top: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        button{
+            margin-left: 5px;
+            width: 60px;
+        }
+        
+    </style>
+    <!-- <script src="main.js"></script>   -->
+    <script>
+       function myFuntion(){
+            var data = ['Intel', 'Core', 'AMD'];
+            var sl = document.getElementById('select_op');
+            for(var i=0;i<data.length;i++)
+            {
+                var op = document.createElement('option');
+                op.text = data[i];
+                sl.add(op);
+            }
+       }
+        
+        function Them(){
+            // var d=0;
+            // for(var i=0; i<data.length; i++){
+            // if(value == data[i]){
+            //     alert('Hãng này đã tồn tại!')
+            //     d++;}
+            // if(value.trim() == ""){
+            //     alert('Bạn chưa nhập dữ liệu!')
+            //     break;
+            // }
+            // }
+            // if(d==0){
+            //     add(value.trim())
+            //     array.push(value.trim());
+            // }
+            document.getElementById('hangthem').style.display = "block";
+            document.getElementById('btlThem').style.display = 'none';
+            document.getElementById('btlLuu').style.display = "block";
+            document.getElementById('btlHuy_2').style.display = "block";
+            document.getElementById('btlHuy').style.display = "none";
+        }
+        function Luu(){  
+           var ip = document.getElementById('iptext').value;
+           var sl = document.getElementById('select_op');
+           var op = document.createElement('option');
+        //    var d=0;
+        //    for(var i=0; i<data.length; i++){
+        //     if(ip == data[i]){
+        //         alert('Hãng này đã tồn tại!')
+        //         d++;}
+        //     if(ip.trim() == ""){
+        //         alert('Bạn chưa nhập dữ liệu!')
+        //         break;
+        //     }
+    
+        //     if(d==0){
+        //         op.text = ip;
+        //         sl.add(op);
+        //     }
+        //  }   
+           op.text = ip;
+           sl.add(op);
+           document.getElementById('hangthem').style.display = "none";
+            document.getElementById('btlThem').style.display = 'block';
+            document.getElementById('btlLuu').style.display = "none";
+        }
+       
+        function Huy_2(){
+            document.getElementById('hangthem').style.display = "none";
+            document.getElementById('btlThem').style.display = 'block';
+            document.getElementById('btlLuu').style.display = "none";
+            document.getElementById('btlHuy_2').style.display = "none";
+            document.getElementById('btlHuy').style.display = "block";
+        }
+        
+    </script>
+</head>
+<body onload="myFuntion()">
+    <div class="bo">
+        <label>Danh sách hãng sản xuất</label>
+        <select name="" id="select_op">
+            <!-- <option value="">Intel</option>
+            <option value="">AMD</option>
+            <option value="">Core</option>  -->
+        </select>
+        <br>
+        <div class="hang" id="hangthem">
+            <label for="">Hãng</label>
+            <input type="text" id="iptext">
+        </div>
+        <br>
+
+        <div class="btn">
+            <button id="btlThem" onclick="Them()">Thêm</button>
+            <button id="btlLuu" onclick="Luu()">save</button>
+            <button id="btlHuy" onclick="Huy_1()">Huỷ</button>
+            <button id="btlHuy_2" onclick="Huy_2()">remove</button>
+        </div>
+        
+    </div>
+
+    
+</body>   
+</html>

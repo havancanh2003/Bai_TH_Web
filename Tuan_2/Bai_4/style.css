@@ -1,0 +1,99 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    width: 100%;
+    height: 100px;
+    background-color: brown;
+    display: flex;
+    align-items: center;
+}
+header h2{
+    color: aliceblue;
+    margin-left: 20px;
+    cursor: pointer;
+}
+.menu
+{
+    width: 100%;
+    height: 40px;
+    background-color: burlywood;
+    
+}
+.menu ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.menu ul li{
+    list-style: none;
+    font-size: 100%;
+    margin: 10px 10px ;
+}
+.menu ul li a{
+    text-decoration: none;
+    color: black;
+}
+.menu ul li a:hover{
+    color: indianred;
+}
+.taskbar{
+    width: 100%;
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-right: 20px;
+    
+}
+.taskbar input{
+    min-width: 100%;
+    border-radius: 5px;
+    
+}
+.taskbar button{
+    margin-top: 2px;
+    min-width: 20%;
+    
+    color: black;
+    border-radius: 5px;
+}
+.conten{
+    flex: 1;
+    display: flex;
+}
+.taskbar{
+    flex: 1;
+}
+.conten_body{
+    flex: 3;
+    margin-top: 10px;
+    flex-wrap: wrap;
+}
+.conten_body_one{
+    display: flex;
+    margin-bottom: 10px;
+    flex-wrap: wrap;
+}
+.conten_body_one div{
+    margin-right: 10px;
+}
+.conten_body_two{
+    display: flex;
+    flex-wrap: wrap;
+}
+.conten_body_two div{
+    margin-right: 10px;
+} 
+.conten img {
+    cursor: pointer;
+}
+footer{
+    width: 100%;
+    height: 40px;
+    background-color: brown;
+    position: fixed;
+    bottom: 0.01px;
+}

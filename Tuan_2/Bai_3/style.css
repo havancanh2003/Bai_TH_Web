@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:sans-serif ;
+}
+header{
+    width: 100%;
+    height: 70px;
+    background-color: rgb(216, 55, 23);
+    display: flex;
+    
+    align-items: center;
+}
+h1{
+    font-size: 20px;
+    cursor: pointer;
+    color: aliceblue;
+    margin-left: 20px;
+}
+#conten{
+    display: flex;
+    flex: 1;
+    margin-top: 7px;
+    flex-wrap: wrap;
+}
+.taskbar{
+    flex:1;   
+}
+.conten{
+    flex: 2;
+}
+.img_body{
+    flex: 1;
+}
+.taskbar-1{
+    width: 100%;  
+    height: 40px;
+    margin-bottom:10px ; 
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: aquamarine;
+    cursor: pointer;
+}
+.taskbar-2{
+    width:100%;  
+    height: 40px;
+    margin-bottom:10px ; 
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: aquamarine;
+    cursor: pointer;
+}
+.taskbar-3{
+    width: 100%;  
+    height: 40px;
+    margin-bottom:10px ; 
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: aquamarine;
+    cursor: pointer;
+}
+.taskbar-4{
+    width: 100%;  
+    height: 40px;
+    margin-bottom:10px ; 
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: aquamarine;
+    cursor: pointer;
+}
+.taskbar h5{
+    padding-top: 10px ;
+    padding-left: 10px ;
+}
+
+.conten_body{
+    margin-left: 10px;
+    padding-left: 10px;
+}
+.conten_body h3{
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+.conten_body div{
+    
+    margin-bottom: 40px;
+}
+footer{
+    position: fixed;
+    background-color: rgb(216, 55, 23);
+    width: 100%;
+    height: 50px;
+    bottom: 0.01px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.img_body{
+    width: 100%;
+}
+footer h4{
+    color: aliceblue;
+}
